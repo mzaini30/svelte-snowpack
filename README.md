@@ -1,24 +1,75 @@
-# New Project
+# Svelte Snowpack
 
-> ✨ Bootstrapped with Create Snowpack App (CSA).
+## Instalasi
 
-## Available Scripts
+```bash
+npx degit mzaini30/svelte-snowpack hello-world
+npm i --prefer-offline
+```
 
-### npm start
+## Mode Dev
 
-Runs the app in the development mode.
-Open http://localhost:8080 to view it in the browser.
+Menggunakan Snowpack
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
+```bash
+npm run start
+```
 
-### npm run build
+## Build
 
-Builds a static copy of your site to the `build/` folder.
-Your app is ready to be deployed!
+```bash
+npm run build
+```
 
-**For the best production performance:** Add a build bundler plugin like [@snowpack/plugin-webpack](https://github.com/snowpackjs/snowpack/tree/main/plugins/plugin-webpack) or [snowpack-plugin-rollup-bundle](https://github.com/ParamagicDev/snowpack-plugin-rollup-bundle) to your `snowpack.config.json` config file.
+## Sudah Ada Bootstrap
 
-### Q: What about Eject?
+Letaknya di `src/pages/_layout.svelte`
 
-No eject needed! Snowpack guarantees zero lock-in, and CSA strives for the same.
+## Menggunakan Routify
+
+Semua halaman ada di `src/pages`
+
+| File | Route |
+|---|---|
+| `index.svelte` | `situs.com` |
+| `hello.svelte` | `situs.com/hello` |
+| `[slug].svelte` | `situs.com/judulnya` |
+
+## Tools Siap Pakai
+
+```javascript
+const tools = require('tools')
+console.log()
+
+// acak
+const angka = [...Array(10).keys()]
+const acak = tools.acak(angka)
+console.log('Angka diacak:')
+console.log(acak)
+console.log()
+
+// slug
+const judul = 'Aku mau makan nasi. Kamu mau ikut kah?'
+console.log(`Judul: ${judul}`)
+console.log(`Slug: ${tools.slug(judul)}`)
+console.log()
+
+// tanggal
+console.log(`Tanggal sekarang: ${tools.tanggal()}`)
+
+console.log()
+```
+
+## Embed Youtube
+
+```javascript
+const yt = require("embed-youtube")
+const teks = `
+Ini videonya:
+
+{{ youtube ygH68h }}
+
+Bagus kan?
+`
+console.log(yt(teks))
+```

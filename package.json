@@ -11,7 +11,11 @@
   "dependencies": {
     "@roxi/routify": "^2.7.3",
     "@snowpack/plugin-svelte": "^3.5.2",
-    "svelte": "^3.32.1"
+    "embed-youtube": "github:mzaini30/embed-youtube",
+    "svelte": "^3.32.1",
+    "tools": "github:mzaini30/tools"
   },
-  "routify": {"routifyDir": "src/.routify"}
+  "routify": {
+    "routifyDir": "src/.routify"
+  }
 }

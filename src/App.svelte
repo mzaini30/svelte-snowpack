@@ -1,16 +1,7 @@
-<h1>Hello</h1>
-<p>Ini keren juga ya...</p>
+<!-- src/App.svelte -->
+<script>
+  import { Router } from "@roxi/routify";
+  import { routes } from "../.routify/routes";
+</script>
 
-<style type="text/css">
-  h1 {
-    text-align: center;
-  }
-  h1,
-  p {
-    font-family: Comic Sans MS;
-  }
-</style>
-
-<svelte:head>
-  <title>Keren</title>
-</svelte:head>
+<Router {routes} />

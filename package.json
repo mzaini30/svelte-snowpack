@@ -1,13 +1,15 @@
 {
   "scripts": {
-    "start": "snowpack dev",
-    "build": "snowpack build",
+    "start": "routify -c snowpack-start",
+    "build": "routify -b && snowpack build",
+    "snowpack-start": "snowpack dev",
     "test": "echo \"This template does not include a test runner by default.\" && exit 1"
   },
   "devDependencies": {
     "snowpack": "^3.0.1"
   },
   "dependencies": {
+    "@roxi/routify": "^2.7.3",
     "@snowpack/plugin-svelte": "^3.5.2",
     "svelte": "^3.32.1"
   }

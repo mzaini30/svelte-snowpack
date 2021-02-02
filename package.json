@@ -12,5 +12,6 @@
     "@roxi/routify": "^2.7.3",
     "@snowpack/plugin-svelte": "^3.5.2",
     "svelte": "^3.32.1"
-  }
+  },
+  "routify": {"routifyDir": "src/.routify"}
 }

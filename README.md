@@ -4,6 +4,7 @@
 
 ```bash
 npx degit mzaini30/svelte-snowpack hello-world
+cd hello-world
 npm i --prefer-offline
 ```
 

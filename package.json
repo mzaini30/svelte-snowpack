@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "routify -c snowpack-start",
+    "dev": "routify -c snowpack-start",
     "build": "routify -b && snowpack build",
     "snowpack-start": "snowpack dev",
     "test": "echo \"This template does not include a test runner by default.\" && exit 1"

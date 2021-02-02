@@ -12,7 +12,7 @@ npm i --prefer-offline
 Menggunakan Snowpack
 
 ```bash
-npm run start
+npm run dev
 ```
 
 ## Build
@@ -20,6 +20,8 @@ npm run start
 ```bash
 npm run build
 ```
+
+Hasilnya di folder `build`
 
 ## Sudah Ada Bootstrap
 

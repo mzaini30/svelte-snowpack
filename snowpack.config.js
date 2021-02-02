@@ -20,6 +20,7 @@ module.exports = {
   },
   packageOptions: {
     /* ... */
+    "knownEntrypoints": ["@roxi/routify/runtime/buildRoutes"]
   },
   devOptions: {
     /* ... */
